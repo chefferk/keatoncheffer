@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<div class="page-header header-filter" data-parallax="true" style="background-image: url('/static/assets/img/background.png');" id="sectionProfile" >
+        <div class="slogan">
+            <div class="slogan-text">
+                <h3 class="title">Contact</h3>
+                <h4>Feel free to reach out and start a conversation.</h4>
+            </div>
+        </div>
+    </div>
+	<div class="main main-raised" id="profile">
+    	<div class="profile-content">
+            <div class="container">
+                {% include 'includes/_pic_section.html' %}
+                <div class="cd-section">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                        	<h4 class="text-center description"></h4>
+                            <form class="contact-form" action="#" method="POST" enctype="multipart/form-data">
+                                <div class="alert"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                    	<div class="form-group label-floating">
+                                        	<label class="control-label">Your Name</label>
+                                            <input type="text" name="name" data-displayname="Name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    	<div class="form-group label-floating">
+                                        	<label class="control-label">Your Email</label>
+                                            <input type="email" name="email" data-displayname="Email" class="form-control" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group label-floating">
+                                	<label class="control-label">Your Message</label>
+                                    <textarea rows="4" name="message" data-displayname="Message" class="form-control" required></textarea>
+                                </div>
+                                <div class="form-group label-floating">
+                                    <div class="g-recaptcha" data-sitekey="6Le6IVMUAAAAAJLwX2gEES9RTT-cBc_GdPEJhZ0S"></div><br>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4 text-center">
+                                        <button class="btn btn-linkedin btn-round btn-raised" type="submit" data-sending="Sending">
+                                        <i class="tb-icon tb-send"></i>&nbsp;Submit	</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+	</div>
+    <br><br>
+{% endblock %}
