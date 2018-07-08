@@ -21,9 +21,9 @@ def education():
     return render_template('education.html')
 
 
-@app.route('/portfolio')
-def portfolio():
-    return render_template('portfolio.html')
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
 
 
 @app.route('/contact')
